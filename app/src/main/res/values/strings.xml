@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CommercialStudent</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <string-array name="studyteams">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Forth Year</item>
+    </string-array>
+</resources>

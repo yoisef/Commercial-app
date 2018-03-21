@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photoshow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/publicap"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="3dp"
+            android:textSize="24sp"
+            android:text="Ahmed mohamed"
+            android:textStyle="bold"
+            android:id="@+id/nameshow"
+            android:gravity="right"
+            />
+
+        <TextView
+            android:id="@+id/commentshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nameshow"
+            android:padding="5dp"
+            android:text="الحمد لله رب العالمين الرحمن الرحيم مالك يوم الدين اياك نعبد واياك نستعين اهدنا الصراط المستقيم صراط اذين انعمت عليهم غير المغضوب عليهم ولا الضالين "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

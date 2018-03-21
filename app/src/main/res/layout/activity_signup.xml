@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/publicap"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youssef.com.commercial_student.Signup">
+
+    <!--  <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wait..."
+           android:visibility="visible"
+           android:gravity="center"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/probar"
+           android:layout_marginBottom="20dp"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:textColor="@color/bluee"
+           android:id="@+id/textView3" />-->
+
+
+
+
+    <EditText
+        android:id="@+id/useremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:hint=" Enter email"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:id="@+id/retypingpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:hint="Re-type password"
+        android:inputType="numberPassword"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"
+
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+
+            android:text="Sign up"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ProgressBar
+            android:id="@+id/probar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/blue"
+            android:indeterminateTintMode="src_in"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fasl" />
+</LinearLayout>
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/publicap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="youssef.com.commercial_student.Profile">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+
+        android:elevation="16dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/addphoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/relativeLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/photoshow"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/unknown"
+            android:layout_above="@+id/addphoto"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:id="@+id/proimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/blue"
+            android:indeterminateTintMode="src_in"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/addphoto"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:elevation="16dp"
+
+            android:gravity="center"
+            android:text="Add photo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter user name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/firstn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="First name"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/Lastn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/white"
+            android:hint="Last name"
+            android:layout_marginLeft="3dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birth day"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick=""
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Click to Choose Birth Day"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        android:focusable="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_female" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study year"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"></Spinner>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/blue"
+        android:text="save"
+        android:id="@+id/saveinfo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+   
+
+
+
+</LinearLayout>

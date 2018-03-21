@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/publicap"
+    android:layout_height="match_parent"
+    tools:context="youssef.com.commercial_student.Home">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="طالب تجاري"
+        android:layout_marginTop="85dp"
+        android:id="@+id/apptitle"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/email"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big"
+        android:textStyle="bold"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:elevation="25dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#000000"
+            android:layout_alignParentTop="true"
+            android:background="#ffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/getemail" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:elevation="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Password"
+            android:inputType="numberPassword"
+            android:layout_below="@+id/getuser"
+            android:textColorHint="#000000"
+            android:background="#ffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/getpass" />
+    </android.support.design.widget.TextInputLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutlog"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/progresslogin"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:text="تسجيل الدخول"
+        android:id="@+id/Loginbu"
+        android:padding="@dimen/ten"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:textColor="@color/publicap"
+        android:textStyle="bold"
+        android:textSize="@dimen/small"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/fasl"
+        android:src="@drawable/fasl"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/fasl"
+        android:gravity="center"
+        android:id="@+id/signuplayout"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont have an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    </LinearLayout>
